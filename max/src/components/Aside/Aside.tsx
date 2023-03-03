@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import Curtain from "../curtain/Curtain";
 import { close } from "../../assets";
+import { useNavigate } from "react-router-dom";
 
 function Aside() {
+  let navigate = useNavigate();
+
+  let Navigate = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="Aside bg-[#222] h-[100vh]">
       <div className="bgoverlay"></div>
@@ -10,7 +17,7 @@ function Aside() {
         <Curtain number={8} />
       </div>
       <div className="exitBtn pt-[4vw] pl-[4vw] relative fade">
-        <Link to="/" className="">
+        <Link to="/" onClick={Navigate}>
           <img
             src={close}
             alt=""

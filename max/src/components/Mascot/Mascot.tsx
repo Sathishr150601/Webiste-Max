@@ -16,7 +16,7 @@ export default class Mascot extends Component {
           </h3>
           <br />
           <div className="contactBtn">
-            <Button1 btnName="Start" btnLocation="/contact" />
+            <Button1 btnName="Start" btnLocation="/contact-us" />
           </div>
         </div>
         <div className="mascot-img">

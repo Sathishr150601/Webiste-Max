@@ -1,6 +1,9 @@
-import { Component } from "react";
+import { Component, useEffect, useState } from "react";
 import Button1 from "../Button/Button1";
 import { maxlogo1, maxlogo2, since } from "../../assets";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import gsap from "gsap";
 
 export default class Header extends Component {
   render() {
@@ -44,8 +47,42 @@ function HeaderCenter() {
 }
 
 function HeaderRight() {
+  const [isVisible, setIsVisible] = useState(true);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 50;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    setHeight(winScroll);
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
   return (
     <div className="HeaderRight hidden justify-end items-center sm:flex">
+      {isVisible && (
+        <div
+          className="call-btnWrapper mr-8 flex text-[#999999]"
+          id="hide-element"
+        >
+          <div className="icon relative w-[4em] mt-[1em]">
+            <FontAwesomeIcon icon={faPhone} className="h-[3em] absolute" />
+          </div>
+          <div className="number-content">
+            <p className="mb-0">Call Us</p>
+            <p className="-mt-2 mb-0 font-bold">1800 202 6112</p>
+          </div>
+        </div>
+      )}
       <div className="contactBtn">
         <Button1 btnName="Contact Us" btnLocation="/contact-us" />
       </div>

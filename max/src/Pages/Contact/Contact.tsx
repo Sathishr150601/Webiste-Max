@@ -33,7 +33,7 @@ function Section() {
   return (
     <div className="">
       <Hero2
-        hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh] xl:pt-[15vh] 2xl:pt-[10vh] pb-[8vh] pl-[3vw]"
+        hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh] xl:pt-[15vh] 2xl:pt-[20vh] pb-[8vh] pl-[3vw] 2xl:pl-[8vw]"
         hero2Caption="Max"
         hero2Title1="Contact"
         hero2Title2="Us"

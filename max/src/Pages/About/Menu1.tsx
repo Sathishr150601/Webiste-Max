@@ -9,7 +9,7 @@ export default function Menu1() {
       <Header />
 
       <Hero2
-        hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh] 2xl:pt-[10vh] pb-[8vh] pl-[3vw] xl:pl-[5vw]"
+        hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh] 2xl:pt-[15vh] pb-[8vh] pl-[3vw] xl:pl-[5vw] 2xl:pl-[8vw]"
         hero2Caption="Max"
         hero2Title1="About"
         hero2Title2="Us"
@@ -39,21 +39,21 @@ function SubMenu() {
       </div>
       <div className="mx-[1vw]">
         <Button3
-          btnln="/about/Our-Capability"
+          btnln="/about/our-capability"
           btn3click={ScrollEvent}
           button3Name="Our Capability"
         />
       </div>
       <div className="mx-[1vw]">
         <Button3
-          btnln="/about/Our-Forte"
+          btnln="/about/our-forte"
           btn3click={ScrollEvent}
           button3Name="Our Forte"
         />
       </div>
       <div className="ml-[1vw] mr-auto">
         <Button3
-          btnln="/about/Our-Milestones"
+          btnln="/about/our-milestones"
           btn3click={ScrollEvent}
           button3Name="Our Milestones"
         />

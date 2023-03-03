@@ -39,7 +39,7 @@ export default function Paths() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/about/ur-capability" element={<Capability />} />
+      <Route path="/about/our-capability" element={<Capability />} />
       <Route path="/about/our-forte" element={<Forte />} />
       <Route path="/about/our-milestones" element={<Milestones />} />
       <Route path="/services" element={<Services />} />
