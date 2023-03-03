@@ -54,18 +54,18 @@ import {
 export default class BeforeAfter extends Component {
   render() {
     return (
-      <div className="BeforeAfter babgimg h-[50vh] sm:h-[72vh] lg:h-[120vh] xl:h-[160vh]">
+      <div className="BeforeAfter babgimg h-max pt-[8vh] mb-[8vw]">
         <div className="w-[90w] mx-auto">
-          <div className="p-5 xl:p-20 2xl:p-20">
+          <div className="relative flex justify-center">
             <div className="scroll-text absolute z-10 text-center w-[90vw]">
-              <h2 className="text-[10vw] leading-[14vw] pb-5 txtshadow mt-[7vh]">
+              <h2 className="text-[10vw] leading-[14vw] pb-5 txtshadow mt-[6vh] lg:mt-[10vh]">
                 The Results that Astound our Clients are an Attestation to our
                 Success.
               </h2>
             </div>
           </div>
         </div>
-        <div className="w-[100vw] mt-[3vh]">
+        <div className="w-[100vw]">
           <Marquee direction="left" speed={80}>
             <div className="slowed-image  pb-[7vw] px-5">
               <img src={BA1} className="w-[20vw]" alt="Image" />

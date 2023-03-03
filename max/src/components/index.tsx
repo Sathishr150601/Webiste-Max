@@ -10,7 +10,4 @@ export { default as LogoSlider } from "./LogoSlider/LogoSlider";
 export { default as Heading } from "./Heading/Heading";
 export { default as Services } from "./Services/Services";
 export { default as BeforeAfter } from "./BeforeAfter/BeforeAfter";
-// export { default as  } from "./";
-// export { default as  } from "./";
-// export { default as  } from "./";
-// export { default as  } from "./";
+

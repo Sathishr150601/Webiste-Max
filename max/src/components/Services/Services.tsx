@@ -12,8 +12,8 @@ export default function Services() {
       scrollTrigger: {
         // markers: true,
         trigger: "#scroll-trigger",
-        start: "bottom 75%",
-        end: "bottom center",
+        start: "bottom 90%",
+        end: "bottom 75%",
         scrub: true,
       },
       x: -24 + "vw",
@@ -21,7 +21,7 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="ImgScrollContainer h-[13vh] sm:h-[23vh] lg:h-[32vh] 2xl:h-[38vh] w-[124vw] flex mb-[14vw]">
+    <div className="ImgScrollContainer h-max flex mb-[14vw] overflow-hidden">
       <FlipCard
         serviceimg="front img1 w-[30vw] h-[30vw] max-w-[600px]"
         cardname="Surgical Treatments"
@@ -32,10 +32,10 @@ export default function Services() {
         serviceContent5="Sapphire Hair Transplant"
         serviceContent6="Eyebrow Hair Transplant"
         serviceContent7="Beard Hair Transplant"
-        servicehidden1="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
-        servicehidden2="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
-        servicehidden3="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
-        servicehidden4="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
+        servicehidden1="flex sm:mb-[.5vh] lg:mb-[1vh] leading-[initial]"
+        servicehidden2="flex sm:mb-[.5vh] lg:mb-[1vh] leading-[initial]"
+        servicehidden3="flex sm:mb-[.5vh] lg:mb-[1vh] leading-[initial]"
+        servicehidden4="flex sm:mb-[.5vh] lg:mb-[1vh] leading-[initial]"
       />
       <FlipCard
         serviceimg="front img2 w-[30vw] h-[30vw] max-w-[600px]"
@@ -47,10 +47,10 @@ export default function Services() {
         serviceContent5="Laser Helmet"
         serviceContent6="Meso Qr 678"
         serviceContent7="Scalp Detox"
-        servicehidden1="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
-        servicehidden2="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
-        servicehidden3="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
-        servicehidden4="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
+        servicehidden1="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]"
+        servicehidden2="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]"
+        servicehidden3="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]"
+        servicehidden4="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]"
       />
       <FlipCard
         serviceimg="front img3 w-[30vw] h-[30vw] max-w-[600px]"
@@ -77,8 +77,8 @@ export default function Services() {
         serviceContent5="Dura"
         serviceContent6=""
         serviceContent7=""
-        servicehidden1="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
-        servicehidden2="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]"
+        servicehidden1="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]"
+        servicehidden2="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]"
         servicehidden3="flex hidden"
         servicehidden4="flex hidden"
       />
@@ -94,15 +94,15 @@ function FlipCard(props: any) {
           <div className="flip-card-inner relative mx-[.5vw]">
             <div className="flip-card-front absolute">
               <div className={props.serviceimg}>
-                <h2 className="caption txtshadow pt-[9.5vh] sm:pt-[18vh] lg:pt-[35vh] 2xl:pt-[45vh] pl-[1vw] text-[13px] sm:text-[18px] lg:text-[3vw] leading-5 lg:leading-[36px] 2xl:leading-[48px]">
+                <h2 className="caption txtshadow pt-[9.5vh] sm:pt-[18vh] lg:pt-[35vh] pl-[1vw] text-[13px] sm:text-[18px] lg:text-[3vw] leading-5 lg:leading-[36px] 2xl:leading-[48px]">
                   {props.cardname}
                 </h2>
               </div>
             </div>
             <div className="flip-card-back absolute">
-              <h4 className="p-[2vw] text-[8px] sm:text-[16px] lg:text-[20px] 2xl:text-[32px] sm:leading-[16px]">
+              <h4 className="p-[2vw] text-[8px] sm:text-[16px] lg:text-[18px] 2xl:text-[32px] sm:leading-[16px]">
                 <ul className="">
-                  <li className="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]">
+                  <li className="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]">
                     <img
                       src={hairLight}
                       alt=""
@@ -110,7 +110,7 @@ function FlipCard(props: any) {
                     />
                     {props.serviceContent1}
                   </li>
-                  <li className="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]">
+                  <li className="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]">
                     <img
                       src={hairLight}
                       alt=""
@@ -118,7 +118,7 @@ function FlipCard(props: any) {
                     />
                     {props.serviceContent2}
                   </li>
-                  <li className="flex sm:leading-[2vh] sm:mb-[.5vh] lg:mb-[1vh]">
+                  <li className="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]">
                     <img
                       src={hairLight}
                       alt=""

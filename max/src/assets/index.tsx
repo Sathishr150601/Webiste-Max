@@ -17,30 +17,58 @@ export { default as hairLight } from "./photos/icons/hair-light.png";
 // Services
 export { default as cosmetic1 } from "./photos/services/cosmetic.png";
 export { default as cosmetic2 } from "./photos/services/cosmetic2.png";
-export { default as eyebrow } from "./photos/services/eyebrow.png";
-export { default as meso } from "./photos/services/meso2.png";
-export { default as olt } from "./photos/services/olt.png";
-export { default as prp } from "./photos/services/prp.png";
-export { default as saph } from "./photos/services/saph.png";
 export { default as saphD } from "./photos/services/sapphire.png";
 export { default as stem } from "./photos/services/stem.png";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
-// export { default as  } from "./photos/services";
+export { default as ht } from "./photos/services/hair transplant.png";
+export { default as wht } from "./photos/services/women transp.png";
+export { default as igmht } from "./photos/services/igm.png";
+export { default as dht } from "./photos/services/dhi.png";
+export { default as sht } from "./photos/services/sapphire.png";
+export { default as ebht } from "./photos/services/eyebrow.png";
+export { default as bht } from "./photos/services/beard.png";
+export { default as prp } from "./photos/services/prp.png";
+export { default as olt } from "./photos/services/olt.png";
+export { default as cs } from "./photos/services/crotico.png";
+export { default as drr } from "./photos/services/dr regr.png";
+export { default as lh } from "./photos/services/helmat.png";
+export { default as meso } from "./photos/services/meso2.png";
+export { default as sd } from "./photos/services/sacal detaox.png";
+export { default as sm } from "./photos/services/Scalp micropigmentation.png";
+export { default as ele } from "./photos/services/eyelash.png";
+export { default as tp } from "./photos/services/tres.png";
+export { default as cc } from "./photos/services/celebrity choice.jpg"
+export { default as sl } from "./photos/services/satin lace.png";
+export { default as fg } from "./photos/services/french.jpg";
+export { default as du } from "./photos/services/Dure.png";
+
+// Services Icons
+export { default as icon1 } from "./photos/services/icon/ht.png";
+export { default as icon2 } from "./photos/services/icon/wht.png";
+export { default as icon3 } from "./photos/services/icon/iht.png";
+export { default as icon4 } from "./photos/services/icon/dht.png"
+export { default as icon5 } from "./photos/services/icon/sapD.png";
+export { default as icon6 } from "./photos/services/icon/eb.png";
+export { default as icon7 } from "./photos/services/icon/el.png";
+export { default as icon8 } from "./photos/services/icon/prp.png";
+export { default as icon9 } from "./photos/services/icon/olt.png";
+export { default as icon10 } from "./photos/services/icon/drr.png";
+export { default as icon11 } from "./photos/services/icon/cs.png";
+export { default as icon12 } from "./photos/services/icon/lh.png";
+export { default as icon13 } from "./photos/services/icon/meso.png";
+export { default as icon14 } from "./photos/services/icon/sd.png";
+export { default as icon15 } from "./photos/services/icon/sm.png";
+export { default as icon16 } from "./photos/services/icon/tp.png";
+export { default as icon17 } from "./photos/services/icon/cc.png";
+export { default as icon18 } from "./photos/services/icon/sl.png";
+export { default as icon19 } from "./photos/services/icon/fg.png";
+export { default as icon20 } from "./photos/services/icon/dura.png";
 
 // Logo
 export { default as maxlogo1 } from "./photos/logo/maxlogo1.svg";
 export { default as maxlogo2 } from "./photos/logo/maxlogo2.svg";
-export { default as since } from "./photos/logo/since.png";
+export { default as since } from "./photos/logo/since.svg";
+export { default as since1 } from "./photos/logo/since1.svg";
+export { default as since2 } from "./photos/logo/since2.png";
 export { default as servicelogo1 } from "./photos/logo/cos.png";
 export { default as servicelogo2 } from "./photos/logo/drr.png";
 export { default as servicelogo3 } from "./photos/logo/fue.png";
@@ -121,5 +149,10 @@ export { default as BA46 } from "./photos/ba/BA46.jpg";
 export { default as BA47 } from "./photos/ba/BA47.jpg";
 export { default as BA48 } from "./photos/ba/BA48.jpg";
 
-// Video
 export { default as LocationVideo } from "./videos/Sapphire.mp4";
+export { default as yt1 } from "./videos/yt1.mp4";
+export { default as yt2 } from "./videos/yt2.mp4";
+export { default as yt3 } from "./videos/yt3.mp4";
+export { default as yt4 } from "./videos/yt4.mp4";
+export { default as yt5 } from "./videos/yt5.mp4";
+export { default as yt6 } from "./videos/yt6.mp4";

@@ -11,11 +11,12 @@ import {
   Services,
   BeforeAfter,
 } from "../components";
+import Footer from "../components/Footer/Footer";
 import SpclServices from "../components/SpclServices/SpclServices";
 
 export default function Home() {
   return (
-    <div className="Home">
+    <div className="Home w-[100vw] overflow-hidden">
       <Header />
 
       <Hero
@@ -65,7 +66,12 @@ export default function Home() {
 
       <SpclServices />
 
-      <div className="h-[100vh]"></div>
+      <Footer
+        fspeed={80}
+        footercap="About Our Clinic"
+        footercontent="Welcome to the Haven of Hair Regrowth"
+        footerpath="/about"
+      />
     </div>
   );
 }

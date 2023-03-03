@@ -1,15 +1,15 @@
 import { Component } from "react";
-import { experienceicon, medalicon, surgeryicon, since } from "../../assets";
+import { experienceicon, medalicon, surgeryicon, since2 } from "../../assets";
 
 export default class Counter extends Component {
   render() {
     return (
       <div className="text-white shadow-slate-50 my-[8vw]">
         <div className="CounterSection absolute h-[20vh] lg:h-[35vh]"></div>
-        <div className="w-[90vw] h-[20vh] lg:h-[35vh] m-auto flex justify-around relative">
+        <div className="w-[80vw] h-[20vh] lg:h-[35vh] m-auto flex justify-around relative">
           <div className="counterContainer flex flex-col justify-center items-center">
             <img
-              src={since}
+              src={since2}
               alt=""
               className="w-[20vw] sm:w-[12vw] lg:w-[5.5vw]"
             />
