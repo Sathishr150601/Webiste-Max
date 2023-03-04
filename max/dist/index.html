@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max - Hair Defines You</title>
+    <script type="module" crossorigin src="/assets/index-b1279e17.js"></script>
+    <link rel="stylesheet" href="/assets/index-0a784bf0.css">
+  </head>
+  <body>
+    <div id="circle">
+      <!-- <div class="w-[80px] h-[80px] bg-[red] rounded-[50%] hidden">
+        <p class="text-xl pt-[16px] text-center">Next Page</p>
+      </div> -->
+    </div>
+    <div id="root"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      var mouseX = window.innerWidth / 2,
+        mouseY = window.innerHeight / 2;
+
+      var circle = {
+        el: $("#circle"),
+        x: window.innerWidth / 2,
+        y: window.innerHeight / 2,
+        w: 50,
+        h: 50,
+        update: function () {
+          l = this.x - this.w / 2;
+          t = this.y - this.h / 2;
+          this.el.css({
+            transform: "translate3d(" + l + "px," + t + "px, 0)",
+          });
+        },
+      };
+
+      $(window).mousemove(function (e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      setInterval(move, 1000 / 60);
+      function move() {
+        circle.x = lerp(circle.x, mouseX, 0.1);
+        circle.y = lerp(circle.y, mouseY, 0.1);
+        circle.update();
+      }
+
+      function lerp(start, end, amt) {
+        return (1 - amt) * start + amt * end;
+      }
+    </script>
+  </body>
+</html>

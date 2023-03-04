@@ -1,12 +1,12 @@
 {
   "name": "max",
-  "homepage": "index.html",
+  "homepage": "https://mymaxhair.com/new/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && firebase deploy",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
