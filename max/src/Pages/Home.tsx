@@ -12,6 +12,7 @@ import {
   BeforeAfter,
 } from "../components";
 import Footer from "../components/Footer/Footer";
+import Hero3 from "../components/Hero/Hero3";
 import SpclServices from "../components/SpclServices/SpclServices";
 
 export default function Home() {

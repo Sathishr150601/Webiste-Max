@@ -4,34 +4,32 @@ import Menu2 from "../../../Menu2";
 import { Component } from "react";
 import { ht } from "../../../../../assets";
 
-export default class HT extends Component {
-  componentDidMount() {
+export default function HT() {
+  window.onload = () => {
     window.scrollTo({
-      top: 590,
+      top: 80,
       behavior: "smooth",
     });
-  }
+  };
 
-  render() {
-    return (
-      <div className="HT">
-        <Header />
-        <Menu2 />
-        <Service1 />
-        <Footer
-          fspeed={80}
-          footercap="About Our Clinic"
-          footercontent="Welcome to the Haven of Hair Regrowth"
-          footerpath="/contact"
-        />
-      </div>
-    );
-  }
+  return (
+    <div className="HT">
+      <Header />
+      <Menu2 />
+      <Service1 />
+      <Footer
+        fspeed={80}
+        footercap="About Our Clinic"
+        footercontent="Welcome to the Haven of Hair Regrowth"
+        footerpath="/contact"
+      />
+    </div>
+  );
 }
 
 function Service1() {
   return (
-    <div className="Service1 w-[90vw] mx-auto my-[20vh]">
+    <div className="Service1 w-[90vw] mx-auto my-[10vh]">
       <div className="goBackBtn">
         <Button1
           btn1click=""

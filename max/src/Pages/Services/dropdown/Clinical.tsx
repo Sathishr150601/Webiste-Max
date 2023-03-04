@@ -5,6 +5,12 @@ import Menu2 from "../Menu2";
 import { icon15, icon6, icon7 } from "../../../assets";
 
 export default function Clinical() {
+  window.onload = () => {
+    window.scrollTo({
+      top: 650,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="">
       <Header />

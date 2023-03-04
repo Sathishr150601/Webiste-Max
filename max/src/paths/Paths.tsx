@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Aside from "../components/Aside/Aside";
-import { Home, UnderMaintanence } from "../Pages";
+import Home from "../Pages/Home";
+import UnderMaintanence from "../Pages/UnderMaintanence";
 import About from "../Pages/About/About";
 import Capability from "../Pages/About/sections/Capability";
 import Forte from "../Pages/About/sections/Forte";

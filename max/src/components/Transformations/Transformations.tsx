@@ -107,7 +107,7 @@ export default function Transformations() {
         hero2Title1="Image"
         hero2Title2="Gallery"
       />
-      <div className="Menu1 top-0 flex justify-around w-[100vw] mx-auto my-[9vh] bg-white text-[.7rem] ">
+      <div className="Menu1 top-0 flex justify-around w-[100vw] mx-auto m-[9vh] bg-white text-[.7rem] ">
         <div className="ml-auto mr-[1vw]">
           <Link
             activeClass="active"

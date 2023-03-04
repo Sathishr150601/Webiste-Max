@@ -7,7 +7,7 @@ export default function Hero2(props: {
   hero2Title2: string;
 }) {
   return (
-    <div className="Hero2 w-[90vw] h-[80vh] mx-auto flex justify-evenly text-black overflow-hidden">
+    <div className="Hero2 w-[90vw] h-[80vh] mx-auto flex justify-evenly text-black overflow-visible">
       <div className={props.hero2class}>
         <div className="arrIcon mb-[2vw]">
           <img src={arrowDark} alt="" className="w-[3vw]" />

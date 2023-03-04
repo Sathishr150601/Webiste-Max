@@ -39,7 +39,7 @@ export default function Hero(props: any) {
           </Link>
         </div>
       </div>
-      <div className="heroBgImg w-[100vw] h-[100vh] lg:h-[185vh] xl:h-[285vh] 2xl:h-[260vh] top-0 xl:-top-[1000px]"></div>
+      <div className="heroBgImg w-[100vw] h-[100vh] lg:h-[185vh] xl:h-[285vh] 2xl:h-[295vh] top-0 xl:-top-[1000px]"></div>
     </div>
   );
 }

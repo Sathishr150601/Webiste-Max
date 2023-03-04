@@ -2,9 +2,23 @@ import { Header } from "../../../components";
 import Footer from "../../../components/Footer/Footer";
 import InnerService from "../../../components/Inner/InnerService";
 import Menu2 from "../Menu2";
-import { icon8, icon9, icon10, icon11, icon12, icon13, icon14 } from "../../../assets";
+import {
+  icon8,
+  icon9,
+  icon10,
+  icon11,
+  icon12,
+  icon13,
+  icon14,
+} from "../../../assets";
 
 export default function NonSurgical() {
+  window.onpageshow = () => {
+    window.scrollTo({
+      top: 600,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="">
       <Header />

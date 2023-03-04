@@ -92,14 +92,14 @@ function Aside() {
             </h2>
           </div>
         </div>
-        <div className="rightSection w-[50vw] mx-auto flex justify-center pt-[5vh] sm:pt-[8vh]">
+        <div className="rightSection w-[50vw] mx-auto flex justify-center">
           <div className="">
             <div className="head">
               <h3 className="playfair pb-[2vw]">Our Locations</h3>
             </div>
-            <div className="flex flex-row">
-              <div className="flex flex-col pr-[4vw]">
-                <div className="Location pb-[4vw]">
+            <div className="flex flex-col">
+              <div className="flex flex-row pb-[4vw]">
+                <div className="Location pr-[4vw]">
                   <div className="heading playfair text-xl lg:text-2xl pb-[1vw]">
                     MAX - Chennai
                   </div>
@@ -124,8 +124,8 @@ function Aside() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col">
-                <div className="Location pb-[4vw]">
+              <div className="flex flex-row pb-[4vw]">
+                <div className="Location pr-[4vw]">
                   <div className="heading playfair text-xl lg:text-2xl pb-[1vw]">
                     MAX - Banglore
                   </div>
@@ -147,6 +147,32 @@ function Aside() {
                   </div>
                   <div className="phone text-xl lg:text-2xl">
                     +91 90325 10000
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row">
+                <div className="Location pr-[4vw]">
+                  <div className="heading playfair text-xl lg:text-2xl pb-[1vw]">
+                    MAX - Noida
+                  </div>
+                  <div className="address text-xl lg:text-2xl pb-[.5vw] hidden">
+                    3R Plaza 28, 2nd Floor, 100 Feet Road, 2A Stage, Hal,
+                    Indiranagar, Bengaluru, Karnataka 560038
+                  </div>
+                  <div className="phone text-xl lg:text-2xl">
+                    +91 98192 23456
+                  </div>
+                </div>
+                <div className="Location">
+                  <div className="heading playfair text-xl lg:text-2xl pb-[1vw]">
+                    MAX - Mumbai
+                  </div>
+                  <div className="address text-xl lg:text-2xl pb-[.5vw] hidden">
+                    Police Station, 1130/A, Rd Number 36, opposite Jubliee
+                    Hills, Jubilee Hills, Hyderabad, Telangana 500034
+                  </div>
+                  <div className="phone text-xl lg:text-2xl">
+                    +91 98845 20000
                   </div>
                 </div>
               </div>

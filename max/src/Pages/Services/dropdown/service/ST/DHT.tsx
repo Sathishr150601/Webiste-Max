@@ -7,7 +7,7 @@ import { dht } from "../../../../../assets";
 export default class HT extends Component {
   componentDidMount() {
     window.scrollTo({
-      top: 590,
+      top: 540,
       behavior: "smooth",
     });
   }
@@ -31,7 +31,7 @@ export default class HT extends Component {
 
 function Service4() {
   return (
-    <div className="Service1 w-[90vw] mx-auto my-[20vh]">
+    <div className="Service1 w-[90vw] mx-auto my-[10vh]">
       <div className="goBackBtn">
         <Button1
           btn1click=""

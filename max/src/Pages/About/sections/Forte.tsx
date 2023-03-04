@@ -3,6 +3,12 @@ import Footer from "../../../components/Footer/Footer";
 import Test from "../Menu1";
 
 export default function Forte() {
+  window.onload = () => {
+    window.scrollTo({
+      top: 600,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="OurForte">
       <Test />

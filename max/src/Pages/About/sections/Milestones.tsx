@@ -5,6 +5,12 @@ import Test from "../Menu1";
 import Milestone from "../../../assets/photos/Milestone.jpeg";
 
 export default function Milestones() {
+    window.onload = () => {
+      window.scrollTo({
+        top: 600,
+        behavior: "smooth",
+      });
+    };
   return (
     <div className="OurForte">
       <Test />

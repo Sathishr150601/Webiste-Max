@@ -48,7 +48,7 @@ function HeaderCenter() {
 
 function HeaderRight() {
   const [isVisible, setIsVisible] = useState(true);
-  const [height, setHeight] = useState(0);
+  const [isHeight, setHeight] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
@@ -56,12 +56,12 @@ function HeaderRight() {
   }, []);
 
   const listenToScroll = () => {
-    let heightToHideFrom = 50;
+    let isHeight = 0;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
     setHeight(winScroll);
 
-    if (winScroll > heightToHideFrom) {
+    if (winScroll > isHeight || window.screenY > isHeight) {
       isVisible && setIsVisible(false);
     } else {
       setIsVisible(true);
@@ -71,7 +71,7 @@ function HeaderRight() {
     <div className="HeaderRight hidden justify-end items-center sm:flex">
       {isVisible && (
         <div
-          className="call-btnWrapper mr-8 flex text-[#999999]"
+          className="call-btnWrapper mr-8 flex text-[#999999] "
           id="hide-element"
         >
           <div className="icon relative w-[4em] mt-[1em]">

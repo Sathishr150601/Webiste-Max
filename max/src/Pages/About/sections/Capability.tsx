@@ -3,10 +3,12 @@ import Footer from "../../../components/Footer/Footer";
 import Test from "../Menu1";
 
 export default function Capability() {
-  // window.scrollTo({
-  //   top: 600,
-  //   behavior: "smooth",
-  // });
+  window.onload = () => {
+    window.scrollTo({
+      top: 600,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="Capability">

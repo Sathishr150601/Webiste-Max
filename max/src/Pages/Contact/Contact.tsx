@@ -7,7 +7,17 @@ import { useRef } from "react";
 import { Link } from "react-scroll";
 
 export default function Contact() {
-  const aboutSection = useRef(null);
+  document.onclose = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  window.onload = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
 
   return (
     <div className="Contact">
