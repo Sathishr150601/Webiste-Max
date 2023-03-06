@@ -7,14 +7,10 @@ export default function Menu1() {
   return (
     <div className="Test">
       <Header />
-
-      <Hero2
-        hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh] 2xl:pt-[15vh] pb-[8vh] pl-[3vw] xl:pl-[5vw] 2xl:pl-[8vw]"
-        hero2Caption="Max"
-        hero2Title1="About"
-        hero2Title2="Us"
-      />
-
+      {/* <Hero2 /> */}
+      {/* hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh]
+      2xl:pt-[15vh] pb-[8vh] pl-[3vw] xl:pl-[5vw] 2xl:pl-[8vw]"
+      hero2Caption="Max" hero2Title1="About" hero2Title2="Us" */}
       <SubMenu />
     </div>
   );
@@ -22,8 +18,9 @@ export default function Menu1() {
 
 function SubMenu() {
   const ScrollEvent = () => {
+    // window.scrollBy(0, window.innerHeight / 2);
     window.scrollTo({
-      top: 560,
+      top: window.innerHeight / 1.25,
       behavior: "smooth",
     });
   };

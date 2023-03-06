@@ -34,6 +34,7 @@ import SL from "../Pages/Services/dropdown/service/NCT/SL";
 import FG from "../Pages/Services/dropdown/service/NCT/FG";
 import DURA from "../Pages/Services/dropdown/service/NCT/DURA";
 import Transformations from "../components/Transformations/Transformations";
+import Test from "../Pages/Test";
 
 export default function Paths() {
   return (
@@ -142,6 +143,7 @@ export default function Paths() {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/menu" element={<Aside />} />
       <Route path="*" element={<UnderMaintanence />} />
+      <Route path="/test" element={<Test />}></Route>
     </Routes>
   );
 }

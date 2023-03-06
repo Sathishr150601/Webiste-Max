@@ -11,13 +11,12 @@
 -------------------------------------------------------------------*/
 .heroBgImg {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
   background-image: url("./assets/photos/hero/herobg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -10;
 }
 
 /*--------------------------------------------------

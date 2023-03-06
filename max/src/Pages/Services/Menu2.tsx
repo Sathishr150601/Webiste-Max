@@ -23,7 +23,7 @@ export default function Menu2() {
 function SubMenu() {
   const ScrollEvent = () => {
     window.scrollTo({
-      top: 550,
+      top: window.innerHeight / 1.4,
       behavior: "smooth",
     });
   };

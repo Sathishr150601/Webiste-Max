@@ -1,6 +1,6 @@
 import abtimg2 from "../../../assets/photos/BABU0235.jpg";
 import Footer from "../../../components/Footer/Footer";
-import Test from "../Menu1";
+import Menu1 from "../Menu1";
 
 export default function Capability() {
   window.onload = () => {
@@ -12,7 +12,7 @@ export default function Capability() {
 
   return (
     <div className="Capability">
-      <Test />
+      <Menu1 />
 
       <OurCapability />
 
