@@ -272,3 +272,15 @@
   z-index: 99999;
   pointer-events: none;
 }
+
+@media (min-width: 450px) {
+  .innerService {
+    width: 60vw;
+  }
+}
+
+.Main-Menu .About:hover .inner-menu,
+.Main-Menu .Services:hover .inner-menu,
+.Main-Menu .More:hover .inner-menu {
+  display: block !important;
+}

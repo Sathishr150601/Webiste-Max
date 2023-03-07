@@ -42,12 +42,7 @@ export default function Contact() {
 function Section() {
   return (
     <div className="">
-      <Hero2
-        hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh] xl:pt-[15vh] 2xl:pt-[20vh] pb-[8vh] pl-[3vw] 2xl:pl-[8vw]"
-        hero2Caption="Max"
-        hero2Title1="Contact"
-        hero2Title2="Us"
-      />
+      <Hero2 caption="Max" title1="Contact" title2="Us" className="h-[]" />
 
       <SubMenu />
     </div>
@@ -56,78 +51,84 @@ function Section() {
 
 function SubMenu() {
   return (
-    <div className="Menu1 top-0 flex justify-around w-[100vw] my-[9vh] bg-white text-[9px]">
-      <div className="ml-auto mr-[.5vw]">
-        <Link
-          activeClass="active"
-          className="test1 space-btn"
-          to="map"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Max-chennai
-        </Link>
+    <div className="Menu1 flex flex-wrap justify-center w-[100vw] mb-[9vh] bg-white text-[9px]">
+      <div className="flex mb-[5vh]">
+        <div className="ml-auto mr-[.5vw] ">
+          <Link
+            activeClass="active"
+            className="test1 space-btn"
+            to="map"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Max-chennai
+          </Link>
+        </div>
+        <div className="mx-[.5vw]">
+          <Link
+            activeClass="active"
+            className="test1 space-btn"
+            to="map"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Max-Bangalore
+          </Link>
+        </div>
       </div>
-      <div className="mx-[.5vw]">
-        <Link
-          activeClass="active"
-          className="test1 space-btn"
-          to="map"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Max-Bangalore
-        </Link>
+      <div className="flex mb-[5vh]">
+        <div className="mx-[.5vw]">
+          <Link
+            activeClass="active"
+            className="test1 space-btn"
+            to="map"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Max-Coimbatore
+          </Link>
+        </div>
+        <div className="mx-[.5vw]">
+          <Link
+            activeClass="active"
+            className="test1 space-btn"
+            to="map"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Max-Hyderabad
+          </Link>
+        </div>
       </div>
-      <div className="mx-[.5vw]">
-        <Link
-          activeClass="active"
-          className="test1 space-btn"
-          to="map"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Max-Coimbatore
-        </Link>
-      </div>
-      <div className="mx-[.5vw]">
-        <Link
-          activeClass="active"
-          className="test1 space-btn"
-          to="map"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Max-Hyderabad
-        </Link>
-      </div>
-      <div className="mx-[.5vw]">
-        <Link
-          activeClass="active"
-          className="test1 space-btn"
-          to="map"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Max-Noida
-        </Link>
-      </div>
-      <div className="ml-[.5vw] mr-auto">
-        <Link
-          activeClass="active"
-          className="test1 space-btn"
-          to="map"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          Max-Mumbai
-        </Link>
+      <div className="flex mb-[5vh]">
+        <div className="mx-[.5vw]">
+          <Link
+            activeClass="active"
+            className="test1 space-btn"
+            to="map"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Max-Noida
+          </Link>
+        </div>
+        <div className="ml-[.5vw] mr-auto">
+          <Link
+            activeClass="active"
+            className="test1 space-btn"
+            to="map"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Max-Mumbai
+          </Link>
+        </div>
       </div>
     </div>
   );

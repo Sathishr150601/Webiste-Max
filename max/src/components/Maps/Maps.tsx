@@ -49,11 +49,11 @@ export default function Maps() {
 
   return (
     <Element name="map">
-      <div className="MapsSection w-[90vw] h-[90vh] overflow-hidden mx-auto py-[8vw] flex text-black">
-        <div className="textContainer w-[40vw]">
+      <div className="MapsSection w-[90vw] h-[max] overflow-hidden mx-auto py-[8vw] flex text-black flex-col sm:flex-row">
+        <div className="textContainer w-[90vw] sm:w-[40vw]">
           <h4 className="pl-[2vw]">Locations(6)</h4>
           <div className="h-[450px] overflow-y-scroll" onLoad={ScrollToTop}>
-            <div className="Location1 w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] mb-[2vh]">
+            <div className="Location1 w-[90vw] sm:w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] mb-[2vh]">
               <h5 className="leading-[32px]">Max Hair Clinic - Chennai</h5>
               <p className="text-[13px] leading-[20px] mb-0">
                 10, 21, Nageswara Rd, behind Taj Coromandel Hotel, Tirumurthy
@@ -71,7 +71,7 @@ export default function Maps() {
                 </div>
               </Link>
             </div>
-            <div className="Location2 w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] my-[2vh]">
+            <div className="Location2 w-[90vw] sm:w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] my-[2vh]">
               <h5 className="leading-[32px]">Max Hair Clinic - Bangalore</h5>
               <p className="text-[13px] leading-[20px] mb-0">
                 3R Plaza 28, 2nd Floor, 100 Feet Road, 2A Stage, Hal,
@@ -89,7 +89,7 @@ export default function Maps() {
                 </div>
               </Link>
             </div>
-            <div className="Location3 w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] my-[2vh]">
+            <div className="Location3 w-[90vw] sm:w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] my-[2vh]">
               <h5 className="leading-[32px]">Max Hair Clinic - Coimbatore</h5>
               <p className="text-[13px] leading-[20px] mb-0">
                 3rd Floor, No.90/1C TKR Tower, Race Course Rd, Coimbatore, Tamil
@@ -107,7 +107,7 @@ export default function Maps() {
                 </div>
               </Link>
             </div>
-            <div className="Location w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] my-[2vh]">
+            <div className="Location w-[90vw] sm:w-[38vw] mx-auto p-[2vw] bg-[#F7F7F7] rounded-[20px] my-[2vh]">
               <h5 className="leading-[32px]">Max Hair Clinic - Hyderabad</h5>
               <p className="text-[13px] leading-[20px] mb-0">
                 Police Station, 1130/A, Rd Number 36, opposite Jubliee Hills,
@@ -127,7 +127,7 @@ export default function Maps() {
             </div>
           </div>
         </div>
-        <div className="mapsContainer w-max">
+        <div className="mapsContainer w-[90vw] mx-auto sm:w-max ">
           {ShowMap1 && <Map1 />}
           {ShowMap2 && <Map2 />}
           {ShowMap3 && <Map3 />}
@@ -143,7 +143,7 @@ function Map1() {
     <div className="location1 ">
       <Iframe
         url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.646293601603!2d80.2435051153436!3d13.05817191650464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52664281626b21%3A0x7ba51b84f54c63c3!2sMax%20Hair%20Clinic%20Chennai%20-%20Best%20Hair%20Fall%20Treatment%20Clinic%20in%20Chennai!5e0!3m2!1sen!2sin!4v1677733134724!5m2!1sen!2sin"
-        className="h-[500px] w-[50vw]"
+        className="h-[500px] w-[90vw] sm:w-[50vw]"
         scrolling="no"
         loading="auto"
         referrerpolicy="no-referrer-when-downgrade"
@@ -157,7 +157,7 @@ function Map2() {
     <div className="location1">
       <Iframe
         url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1377948840304!2d77.63967591534308!3d12.96303321857237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15bcac424faf%3A0xbeab6998a29ccb44!2sMax%20Hair%20Clinic%20Bangalore%20-%20Best%20Hair%20Fall%20Treatment%20Clinic%20in%20Bangalore!5e0!3m2!1sen!2sin!4v1677738470672!5m2!1sen!2sin"
-        className="h-[500px] w-[50vw]"
+        className="h-[500px] w-[90vw] sm:w-[50vw]"
         scrolling="no"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
@@ -171,7 +171,7 @@ function Map3() {
     <div className="location1">
       <Iframe
         url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5022855547227!2d76.97080901533496!3d11.00089065801721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859a71eac1ba9%3A0xd9dce8d7a376204b!2sMax%20Hair%20Clinic%20Coimbatore%20-%20Best%20Hair%20Fall%20Treatment%20Clinic%20in%20Coimbatore!5e0!3m2!1sen!2sin!4v1677738584571!5m2!1sen!2sin"
-        className="h-[500px] w-[50vw]"
+        className="h-[500px] w-[90vw] sm:w-[50vw]"
         scrolling="no"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
@@ -185,7 +185,7 @@ function Map4() {
     <div className="location1 fade-appear fade-leave">
       <Iframe
         url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.617093056403!2d78.4065639153708!3d17.43015410615685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91486b672467%3A0x89c58da0c02ec56d!2sMax%20Hair%20Clinic%20-%20Hyderabad!5e0!3m2!1sen!2sin!4v1677737779388!5m2!1sen!2sin"
-        className="h-[500px] w-[50vw]"
+        className="h-[500px] w-[90vw] sm:w-[50vw]"
         scrolling="no"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"

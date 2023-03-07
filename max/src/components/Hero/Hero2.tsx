@@ -1,33 +1,43 @@
-import {arrowDark, maxlogo1, maxlogo2, since1} from "../../assets"
+import { Link } from "react-router-dom";
+import { arrowDark, maxlogo1, maxlogo2, since1 } from "../../assets";
 
-export default function Hero2(props: {
-  hero2class: string;
-  hero2Caption: string;
-  hero2Title1: string;
-  hero2Title2: string;
-}) {
+export default function Hero2(props: any) {
   return (
-    <div className="Hero2 w-[90vw] h-[80vh] mx-auto flex justify-evenly text-black overflow-visible">
-      <div className={props.hero2class}>
-        <div className="arrIcon mb-[2vw]">
-          <img src={arrowDark} alt="" className="w-[3vw]" />
+    <section className="Hero02 overflow-clip text-black w-[100vw] ">
+      <div className="top w-[90vw] mx-auto h-[80vh] pt-[25vh] pb-[5vh] sm:pt-[16vh] sm:flex sm:justify-around md:h-[90vh] ">
+        <div className="top-left pl-[3vw] flex flex-col justify-center sm:pl-0">
+          <div className="arrow-icon">
+            <img
+              src={arrowDark}
+              alt=""
+              className="w-[8vw] sm:w-[6vw] lg:w-[3vw]"
+            />
+          </div>
+          <div className="hero2caption pt-[5vh] sm:pt-[8vh]">
+            <h3 className="uppercase text-[3rem] sm:text-[3rem]">
+              {props.caption}
+            </h3>
+          </div>
+          <div className="hero2title pt-[5vh] sm:pt-[8vh]">
+            <h2 className="text-[20vw] leading-[12vh] sm:text-[12vw] md:text-[10vw] md:leading-[16vh] 2xl:text-[8vw]">
+              <span className="">{props.title1}</span>
+              <span className="">{props.title2}</span>
+            </h2>
+          </div>
         </div>
-        <div className="hero2subtitle mb-[2vw]">
-          <h5 className="">
-            <span>{props.hero2Caption}</span>
-          </h5>
-        </div>
-        <div className="hero2title mb-[2vw]">
-          <h2 className="text-[10vw] xl:text-[8vw] leading-[13vw] xl:leading-[11vw]  font-medium relative inline-block align-top w-max overflow-hidden mt-0 p-0">
-            <span>{props.hero2Title1}</span>
-            <span>{props.hero2Title2}</span>
-          </h2>
+        <div className="top-right hidden sm:flex sm:flex-col sm:justify-center sm:items-center">
+          <img
+            src={since1}
+            alt="since logo"
+            className="w-[15vw] sm:w-[18vw] sm:my-[3vh] md:-my-[1vh] lg:w-[15vw]"
+          />
+          <img
+            src={maxlogo1}
+            alt="logo1"
+            className="w-[30vw] sm:[35vw] sm:-my-[3vh] md:-my-[5vh] lg:w-[25vw] 2xl:w-[22vw]"
+          />
         </div>
       </div>
-      <div className="logoSection w-[40vw] flex flex-col justify-center items-center pt-[20vh] xl:pt-[15vh] 2xl:pt-[10vh] ">
-        <img src={since1} alt="" className="w-[15vw]" />
-        <img src={maxlogo1} alt="" className="w-[30vw] xl:w-[25vw] 2xl:w-[23vw] -mt-[10vh]" />
-      </div>
-    </div>
+    </section>
   );
 }

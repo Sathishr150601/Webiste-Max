@@ -6,10 +6,43 @@ import { olt } from "../../../../../assets";
 
 export default class OLT extends Component {
   componentDidMount() {
-    window.scrollTo({
-      top: 540,
-      behavior: "smooth",
-    });
+    if (window.innerWidth >= 1023) {
+      if (window.innerWidth <= 1280) {
+        window.scrollTo({
+          top: window.innerHeight / 1.4,
+          behavior: "smooth",
+        });
+      } else if (window.innerWidth <= 1561) {
+        window.scrollTo({
+          top: window.innerHeight / 1.33,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top: window.innerHeight / 1.33,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      if (window.innerWidth <= 767) {
+        if (window.innerWidth <= 450) {
+          window.scrollTo({
+            top: window.innerHeight / 1.66,
+            behavior: "smooth",
+          });
+        } else {
+          window.scrollTo({
+            top: window.innerHeight / 1.45,
+            behavior: "smooth",
+          });
+        }
+      } else {
+        window.scrollTo({
+          top: window.innerHeight / 1.25,
+          behavior: "smooth",
+        });
+      }
+    }
   }
 
   render() {
@@ -31,24 +64,26 @@ export default class OLT extends Component {
 
 function Service1() {
   return (
-    <div className="Service1 w-[90vw] mx-auto my-[10vh]">
-      <div className="goBackBtn">
-        <Button1
-          btn1click=""
-          btnLocation="/services/non-surgical-treatments"
-          btnName="Go Back"
-          spanClass1=""
-          spanClass2=""
-          spanClass3=""
-        />
-      </div>
-      <div className="serviceContent w-[85vw] mx-auto text-black my-[5vh]">
-        <div className="heading">
-          <h2 className="">Oxygen LASER Therapy</h2>
+    <section className="Service2 my-[8vw]">
+      <div className="lg:w-[90vw] lg:mx-auto lg:flex lg:flex-row-reverse lg:justify-between">
+        <div className="goBackBtn">
+          <Button1
+            btn1click=""
+            btnLocation="/services/non-surgical-treatments"
+            btnName="Go Back"
+            spanClass1=""
+            spanClass2=""
+            spanClass3=""
+          />
         </div>
-        <div className="flex justify-between">
-          <div className="textSection w-[50vw]">
-            <p className="text-justify text-[14px] xl:text-[20px]">
+        <div className="content w-[90vw] mx-auto text-black md:w-[80vw] lg:w-[45vw] lg:mx-0 mt-[3vh]">
+          <div className="title">
+            <h2 className="text-[11vw] leading-[9vh] sm:mb-[3vh] md:text-[8vw] lg:text-[6vw]">
+              Oxygen LASER Therapy
+            </h2>
+          </div>
+          <div className="passage sm:w-[80vw] sm:mx-auto md:w-[70vw] lg:w-[45vw]">
+            <p className="text-[1em] text-justify md:text-[1.2em] xl:text-[1.3em] xl:leading-[2.3em] 2xl:text-[1.5em]">
               MAX Oxygen LASER Therapy is a clinically proven, FDA-approved
               advanced method of stimulating hair growth and effectively
               reducing baldness. Oxygen laser therapy is a non-surgical
@@ -74,11 +109,15 @@ function Service1() {
               stable.
             </p>
           </div>
-          <div className="imgSection w-[30vw] flex justify-center">
-            <img src={olt} alt="" className="w-[30vw] h-[60vh]" />
-          </div>
+        </div>
+        <div className="image">
+          <img
+            src={olt}
+            alt="Oxygen Laser Theraphy"
+            className="w-[100vw] sm:w-[70vw] sm:mx-auto sm:rounded-3xl md:w-[60vw] lg:w-[40vw]"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

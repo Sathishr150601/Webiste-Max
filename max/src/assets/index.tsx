@@ -36,7 +36,7 @@ export { default as sd } from "./photos/services/sacal detaox.png";
 export { default as sm } from "./photos/services/Scalp micropigmentation.png";
 export { default as ele } from "./photos/services/eyelash.png";
 export { default as tp } from "./photos/services/tres.png";
-export { default as cc } from "./photos/services/celebrity choice.jpg"
+export { default as cc } from "./photos/services/celebrity choice.jpg";
 export { default as sl } from "./photos/services/satin lace.png";
 export { default as fg } from "./photos/services/french.jpg";
 export { default as du } from "./photos/services/Dure.png";
@@ -45,7 +45,7 @@ export { default as du } from "./photos/services/Dure.png";
 export { default as icon1 } from "./photos/services/icon/ht.png";
 export { default as icon2 } from "./photos/services/icon/wht.png";
 export { default as icon3 } from "./photos/services/icon/iht.png";
-export { default as icon4 } from "./photos/services/icon/dht.png"
+export { default as icon4 } from "./photos/services/icon/dht.png";
 export { default as icon5 } from "./photos/services/icon/sapD.png";
 export { default as icon6 } from "./photos/services/icon/eb.png";
 export { default as icon7 } from "./photos/services/icon/el.png";
@@ -62,6 +62,7 @@ export { default as icon17 } from "./photos/services/icon/cc.png";
 export { default as icon18 } from "./photos/services/icon/sl.png";
 export { default as icon19 } from "./photos/services/icon/fg.png";
 export { default as icon20 } from "./photos/services/icon/dura.png";
+export { default as icon21 } from "./photos/services/icon/bht.png";
 
 // Logo
 export { default as maxlogo1 } from "./photos/logo/maxlogo1.svg";

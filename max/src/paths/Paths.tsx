@@ -3,9 +3,6 @@ import Aside from "../components/Aside/Aside";
 import Home from "../Pages/Home";
 import UnderMaintanence from "../Pages/UnderMaintanence";
 import About from "../Pages/About/About";
-import Capability from "../Pages/About/sections/Capability";
-import Forte from "../Pages/About/sections/Forte";
-import Milestones from "../Pages/About/sections/Milestones";
 import Contact from "../Pages/Contact/Contact";
 import Services from "../Pages/Services/Services";
 import NonSurgical from "../Pages/Services/dropdown/NonSurgical";
@@ -35,15 +32,14 @@ import FG from "../Pages/Services/dropdown/service/NCT/FG";
 import DURA from "../Pages/Services/dropdown/service/NCT/DURA";
 import Transformations from "../components/Transformations/Transformations";
 import Test from "../Pages/Test";
+import Aside1 from "../components/Aside/Aside1";
 
 export default function Paths() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/about/our-capability" element={<Capability />} />
-      <Route path="/about/our-forte" element={<Forte />} />
-      <Route path="/about/our-milestones" element={<Milestones />} />
+
       <Route path="/services" element={<Services />} />
       <Route
         path="/services/non-surgical-treatments"
@@ -141,9 +137,9 @@ export default function Paths() {
       <Route path="/transformations" element={<Transformations />} />
       <Route path="/services/non-clinical-treatments/dura" element={<DURA />} />
       <Route path="/contact-us" element={<Contact />} />
-      <Route path="/menu" element={<Aside />} />
+      <Route path="/menu" element={<Aside1 />} />
       <Route path="*" element={<UnderMaintanence />} />
-      <Route path="/test" element={<Test />}></Route>
+      <Route path="/test" element={<Aside />}></Route>
     </Routes>
   );
 }
