@@ -42,7 +42,7 @@ export default function Paths() {
 
       <Route path="/services" element={<Services />} />
       <Route
-        path="/services/non-surgical-treatments"
+        path="/services/non-surgical-treatments/"
         element={<NonSurgical />}
       />
       <Route path="/services/clinical-treatments" element={<Clinical />} />

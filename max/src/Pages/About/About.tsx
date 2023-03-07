@@ -3,6 +3,9 @@ import Header from "../../components/Header/Header";
 import Hero02 from "../../components/Hero/Hero02";
 import abtimg2 from "../../assets/photos/BABU0235.jpg";
 import Milestone from "../../assets/photos/Milestone.jpeg";
+import Capability from "../../assets/photos/capability.png";
+import forte from "../../assets/photos/forte.jpg";
+import clinic from "../../assets/photos/clinic.jpg";
 import { useState } from "react";
 
 export default function About() {
@@ -135,7 +138,7 @@ function OurClinic() {
         </div>
         <div className="image">
           <img
-            src={abtimg2}
+            src={clinic}
             alt=""
             className="w-[100vw] sm:w-[70vw] sm:mx-auto sm:rounded-3xl md:w-[60vw] lg:w-[40vw]"
           />
@@ -176,7 +179,7 @@ function OurCapability() {
         </div>
         <div className="image">
           <img
-            src={abtimg2}
+            src={Capability}
             alt=""
             className="w-[100vw] sm:w-[70vw] sm:mx-auto sm:rounded-3xl md:w-[60vw] lg:w-[40vw]"
           />
@@ -211,7 +214,7 @@ function OurForte() {
         </div>
         <div className="image">
           <img
-            src={abtimg2}
+            src={forte}
             alt=""
             className="w-[100vw] sm:w-[70vw] sm:mx-auto sm:rounded-3xl md:w-[60vw] lg:w-[40vw]"
           />

@@ -14,12 +14,12 @@ export default function Aside1() {
 
   return (
     <section className="menu-section w-[100vw] h-[100vh] bg-[#222] overflow-hidden">
-      <div className="close-btn h-[10vh] w-[100vw] flex items-end ml-[10vw]">
+      <div className="close-btn h-[10vh] w-[100vw] flex items-end pl-[10vw]">
         <Link to="/" onClick={Navigate}>
           <img
             src={close}
             alt="close-btn"
-            className="w-[8vw] md:w-[6vw] lg:w-[3vw]"
+            className="w-[8vw] md:w-[6vw] lg:w-[3vw] hover:scale-125"
           />
         </Link>
       </div>
@@ -35,16 +35,16 @@ export default function Aside1() {
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
                 <Link to="/about">
-                  <li className="">Our Clinic</li>
+                  <li className="hover:scale-125">Our Clinic</li>
                 </Link>
                 <Link to="/about">
-                  <li className="">Our Capability</li>
+                  <li className="hover:scale-125">Our Capability</li>
                 </Link>
                 <Link to="/about">
-                  <li className="">Our Forte</li>
+                  <li className="hover:scale-125">Our Forte</li>
                 </Link>
                 <Link to="/about">
-                  <li className="">Our Milestones</li>
+                  <li className="hover:scale-125">Our Milestones</li>
                 </Link>
               </ul>
             </li>
@@ -56,16 +56,16 @@ export default function Aside1() {
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
                 <Link to="/services">
-                  <li className="">Surgical Treatments</li>
+                  <li className="hover:scale-125">Surgical Treatments</li>
                 </Link>
                 <Link to="/services/non-surgical-treatments">
-                  <li className="">Non-Surgical Treatments</li>
+                  <li className="hover:scale-125">Non-Surgical Treatments</li>
                 </Link>
                 <Link to="/services/clinical-treatments">
-                  <li className="">Clinical Treatments</li>
+                  <li className="hover:scale-125">Clinical Treatments</li>
                 </Link>
                 <Link to="/services/non-clinical-treatments">
-                  <li className="">Non-Clinical Treatments</li>
+                  <li className="hover:scale-125">Non-Clinical Treatments</li>
                 </Link>
               </ul>
             </li>
@@ -78,7 +78,7 @@ export default function Aside1() {
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
                 <Link to="/transformations">
-                  <li className="">Image Gallery</li>
+                  <li className="hover:scale-125">Image Gallery</li>
                 </Link>
               </ul>
             </li>
@@ -89,29 +89,29 @@ export default function Aside1() {
           <div className="flex justify-center items-center text-[2vw] leading-[5vh] xl:leading-[7vh] 2xl:text-[1.5vw] 2xl:leading-[6vh]">
             <ul className="flex flex-col justify-between">
               <li className="flex flex-col mb-[3vh]">
-                <span className="">Max - Chennai</span>
+                <span className="">MAX - Chennai</span>
                 <span className="">+91 88832 88822</span>
               </li>
               <li className="flex flex-col mb-[3vh]">
-                <span className="">Max - Coimbatore</span>
+                <span className="">MAX - Coimbatore</span>
                 <span className="">+91 95516 95516</span>
               </li>
               <li className="flex flex-col mb-[3vh]">
-                <span className="">Max - Hyderabad</span>
+                <span className="">MAX - Hyderabad</span>
                 <span className="">+91 90325 10000</span>
               </li>
             </ul>
             <ul className="pl-[3vw]">
               <li className="flex flex-col mb-[3vh]">
-                <span className="">Max - Bangalore</span>
+                <span className="">MAX - Bangalore</span>
                 <span className="">+91 95516 95516</span>
               </li>
               <li className="flex flex-col mb-[3vh]">
-                <span className="">Max - Noida</span>
+                <span className="">MAX - Noida</span>
                 <span className="">+91 98192 23456</span>
               </li>
               <li className="flex flex-col mb-[3vh]">
-                <span className="">Max - Mumbai</span>
+                <span className="">MAX - Mumbai</span>
                 <span className="">+91 98845 20000</span>
               </li>
             </ul>
