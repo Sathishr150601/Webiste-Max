@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Curtain from "../curtain/Curtain";
 import { close } from "../../assets";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,7 +25,9 @@ export default function Aside1() {
       <div className="lg:flex justify-evenly">
         <div className="Main-Menu w-[100vw] lg:w-[40vw]">
           <ul className="flex flex-col justify-center items-center h-[90vh] text-[4em] text-center ">
-            <li className="Home">Home</li>
+            <li className="Home">
+              <Link to="/">Home</Link>
+            </li>
             <li className="About">
               About
               <FontAwesomeIcon
@@ -34,18 +35,18 @@ export default function Aside1() {
                 className=" pl-[3vw] w-[6vw] lg:pl-[1vw] lg:w-[1.5vw]"
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
-                <Link to="/about">
-                  <li className="hover:scale-125">Our Clinic</li>
-                </Link>
-                <Link to="/about">
-                  <li className="hover:scale-125">Our Capability</li>
-                </Link>
-                <Link to="/about">
-                  <li className="hover:scale-125">Our Forte</li>
-                </Link>
-                <Link to="/about">
-                  <li className="hover:scale-125">Our Milestones</li>
-                </Link>
+                <li className="hover:scale-125">
+                  <Link to="/about">Our Clinic </Link>
+                </li>
+                <li className="hover:scale-125">
+                  <Link to="/about">Our Capability </Link>
+                </li>
+                <li className="hover:scale-125">
+                  <Link to="/about">Our Forte </Link>
+                </li>
+                <li className="hover:scale-125">
+                  <Link to="/about">Our Milestones </Link>
+                </li>
               </ul>
             </li>
             <li className="Services">
@@ -55,21 +56,23 @@ export default function Aside1() {
                 className=" pl-[3vw] w-[6vw] lg:pl-[1vw] lg:w-[1.5vw]"
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
-                <Link to="/services">
-                  <li className="hover:scale-125">Surgical Treatments</li>
-                </Link>
-                <Link to="/services/non-surgical-treatments">
-                  <li className="hover:scale-125">Non-Surgical Treatments</li>
-                </Link>
-                <Link to="/services/clinical-treatments">
-                  <li className="hover:scale-125">Clinical Treatments</li>
-                </Link>
-                <Link to="/services/non-clinical-treatments">
-                  <li className="hover:scale-125">Non-Clinical Treatments</li>
-                </Link>
+                <li className="hover:scale-125">
+                  <Link to="/services">Surgical Treatments </Link>
+                </li>
+                <li className="hover:scale-125">
+                  <Link to="/services">Non-Surgical Treatments </Link>
+                </li>
+                <li className="hover:scale-125">
+                  <Link to="/services">Clinical Treatments </Link>
+                </li>
+                <li className="hover:scale-125">
+                  <Link to="/services">Non-Clinical Treatments </Link>
+                </li>
               </ul>
             </li>
-            <li className="Contact">Contact</li>
+            <li className="Contact">
+              <Link to="/contact-us">Contact</Link>
+            </li>
             <li className="More">
               More
               <FontAwesomeIcon
