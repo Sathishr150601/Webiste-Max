@@ -14,6 +14,15 @@ export default function About() {
   const [third, setthird] = useState(false);
   const [fourth, setfourth] = useState(false);
 
+  const ToBeExecutedOnFirstLoad = () => {
+    window.scrollTo(0, 0);
+    return null;
+  };
+  if (localStorage.getItem("first") === null) {
+    ToBeExecutedOnFirstLoad();
+    localStorage.setItem("first", "nope!");
+  }
+
   const handleScroll = () => {
     if (window.innerWidth >= 1023) {
       if (window.innerWidth <= 1280) {
@@ -36,7 +45,7 @@ export default function About() {
       if (window.innerWidth <= 767) {
         if (window.innerWidth <= 450) {
           window.scrollTo({
-            top: window.innerHeight / 1.66,
+            top: window.innerHeight / 1.3,
             behavior: "smooth",
           });
         } else {
@@ -105,7 +114,7 @@ export default function About() {
       {fourth && <OurMilestones />}
       <Footer
         fspeed={80}
-        footercap="About Our Clinic"
+        footercap="About Our Services"
         footercontent="Welcome to the Haven of Hair Regrowth"
         footerpath="/services"
       />
@@ -231,3 +240,4 @@ function OurMilestones() {
     </div>
   );
 }
+

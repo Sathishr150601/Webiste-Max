@@ -60,13 +60,19 @@ export default function Aside1() {
                   <Link to="/services">Surgical Treatments </Link>
                 </li>
                 <li className="hover:scale-125">
-                  <Link to="/services">Non-Surgical Treatments </Link>
+                  <Link to="/services/non-surgical-treatments">
+                    Non-Surgical Treatments{" "}
+                  </Link>
                 </li>
                 <li className="hover:scale-125">
-                  <Link to="/services">Clinical Treatments </Link>
+                  <Link to="/services/clinical-treatments">
+                    Clinical Treatments{" "}
+                  </Link>
                 </li>
                 <li className="hover:scale-125">
-                  <Link to="/services">Non-Clinical Treatments </Link>
+                  <Link to="/services/non-clinical-treatments">
+                    Non-Clinical Treatments{" "}
+                  </Link>
                 </li>
               </ul>
             </li>

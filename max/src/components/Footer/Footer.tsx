@@ -46,13 +46,13 @@ export default function Footer(props: {
   return (
     <div className="Footer mt-[5vw] bg-[url('./assets/photos/counter/counterbg.jpg')] bg-cover bg-no-repeat">
       <div className="NavHeading w-[90vw] mx-auto">
-        <div className="hidden sm:block">
-          <h2 className="p-[5vw] pb-[1vw] text-[calc(1rem+1vw)]">
+        <div className="block">
+          <h2 className="py-[3vh] sm:p-[5vw] sm:pb-[1vw] text-[calc(1rem+1vw)]">
             {props.footercap}
           </h2>
         </div>
       </div>
-      <div className="NavContent w-[100vw] h-max pt-[40px] lg:pt-0">
+      <div className="NavContent w-[100vw] h-max  lg:pt-0">
         <Marquee speed={props.fspeed} className="pb-[3vw] mouse-active">
           <Link to={props.footerpath} className="">
             <h2 className="text-[10vw] leading-[11vw] pl-[9vw]">

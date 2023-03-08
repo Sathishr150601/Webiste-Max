@@ -1,60 +1,60 @@
 import React, { Component } from "react";
 import Marquee from "react-fast-marquee";
 import {
-    BA1,
-    BA10,
-    BA11,
-    BA12,
-    BA13,
-    BA14,
-    BA15,
-    BA16,
-    BA17,
-    BA18,
-    BA19,
-    BA2,
-    BA20,
-    BA21,
-    BA22,
-    BA23,
-    BA24,
-    BA25,
-    BA26,
-    BA27,
-    BA28,
-    BA29,
-    BA3,
-    BA30,
-    BA31,
-    BA32,
-    BA33,
-    BA34,
-    BA35,
-    BA36,
-    BA37,
-    BA38,
-    BA39,
-    BA4,
-    BA40,
-    BA41,
-    BA42,
-    BA43,
-    BA44,
-    BA45,
-    BA46,
-    BA47,
-    BA48,
-    BA5,
-    BA6,
-    BA7,
-    BA8,
-    BA9
+  BA1,
+  BA10,
+  BA11,
+  BA12,
+  BA13,
+  BA14,
+  BA15,
+  BA16,
+  BA17,
+  BA18,
+  BA19,
+  BA2,
+  BA20,
+  BA21,
+  BA22,
+  BA23,
+  BA24,
+  BA25,
+  BA26,
+  BA27,
+  BA28,
+  BA29,
+  BA3,
+  BA30,
+  BA31,
+  BA32,
+  BA33,
+  BA34,
+  BA35,
+  BA36,
+  BA37,
+  BA38,
+  BA39,
+  BA4,
+  BA40,
+  BA41,
+  BA42,
+  BA43,
+  BA44,
+  BA45,
+  BA46,
+  BA47,
+  BA48,
+  BA5,
+  BA6,
+  BA7,
+  BA8,
+  BA9,
 } from "../../assets";
 
 export default class BeforeAfter extends Component {
   render() {
     return (
-      <div className="BeforeAfter babgimg h-max pt-[8vh] mb-[8vw]">
+      <div className="BeforeAfter babgimg h-max pt-[8vh] mb-[8vh] sm:mb-[8vw]">
         <div className="w-[90w] mx-auto">
           <div className="relative flex justify-center">
             <div className="scroll-text absolute z-10 text-center w-[90vw]">
@@ -66,7 +66,7 @@ export default class BeforeAfter extends Component {
           </div>
         </div>
         <div className="w-[100vw]">
-          <Marquee direction="left" speed={80}>
+          <Marquee direction="left" speed={40}>
             <div className="slowed-image  pb-[7vw] px-5">
               <img src={BA1} className="w-[20vw]" alt="Image" />
             </div>

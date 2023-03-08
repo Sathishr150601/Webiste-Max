@@ -8,22 +8,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Services() {
   useEffect(() => {
-    gsap.to(".Services1", {
-      scrollTrigger: {
-        // markers: true,
-        trigger: "#scroll-trigger",
-        start: "bottom 90%",
-        end: "bottom 75%",
-        scrub: true,
-      },
-      x: -24 + "vw",
-    });
+    if (window.innerWidth >= 1024) {
+      gsap.to(".Services1", {
+        scrollTrigger: {
+          // markers: true,
+          trigger: "#scroll-trigger",
+          start: "bottom 90%",
+          end: "bottom 60%",
+          scrub: true,
+        },
+        x: -24 + "vw",
+      });
+    } else {
+      if (window.innerWidth >= 767) {
+        gsap.to(".Services1", {
+          scrollTrigger: {
+            // markers: true,
+            trigger: "#scroll-trigger",
+            start: "bottom 90%",
+            end: "bottom 60%",
+            scrub: true,
+          },
+          x: -60 + "vw",
+        });
+      } else {
+        gsap.to(".Services1", {
+          scrollTrigger: {
+            // markers: true,
+            trigger: "#scroll-trigger",
+            start: "bottom 75%",
+            end: "bottom 50%",
+            scrub: true,
+          },
+          x: -102 + "vw",
+        });
+      }
+    }
   }, []);
 
   return (
     <div className="ImgScrollContainer h-max flex mb-[14vw] overflow-hidden">
       <FlipCard
-        serviceimg="front img1 w-[30vw] h-[30vw] max-w-[600px]"
+        ln="/services"
+        serviceimg="front img1 w-[50vw] h-[50vw] md:w-[40vw] md:h-[40vw] lg:w-[30vw] lg:h-[30vw] max-w-[50vw]"
         cardname="Surgical Treatments"
         serviceContent1="Hair Transplant"
         serviceContent2="Women Hair Transplant"
@@ -38,7 +65,8 @@ export default function Services() {
         servicehidden4="flex sm:mb-[.5vh] lg:mb-[1vh] leading-[initial]"
       />
       <FlipCard
-        serviceimg="front img2 w-[30vw] h-[30vw] max-w-[600px]"
+        ln="/services/non-surgical-treatments"
+        serviceimg="front img2 w-[50vw] h-[50vw] md:w-[40vw] md:h-[40vw] lg:w-[30vw] lg:h-[30vw] max-w-[50vw]"
         cardname="Non-Surgical Treatments"
         serviceContent1="CC PRP Active+"
         serviceContent2="Oxygen LASER Therapy"
@@ -53,7 +81,7 @@ export default function Services() {
         servicehidden4="flex sm:mb-[.5vh] lg:mb-[1vh]  leading-[initial]"
       />
       <FlipCard
-        serviceimg="front img3 w-[30vw] h-[30vw] max-w-[600px]"
+        serviceimg="front img3 w-[50vw] h-[50vw] md:w-[40vw] md:h-[40vw] lg:w-[30vw] lg:h-[30vw] max-w-[50vw]"
         cardname="Clinical Treatments"
         serviceContent1="Scalp Micropigmentation"
         serviceContent2="Eyelash Extension"
@@ -68,7 +96,7 @@ export default function Services() {
         servicehidden4="flex hidden"
       />
       <FlipCard
-        serviceimg="front img4 w-[30vw] h-[30vw] max-w-[600px]"
+        serviceimg="front img4 w-[50vw] h-[50vw] md:w-[40vw] md:h-[40vw] lg:w-[30vw] lg:h-[30vw] max-w-[50vw]"
         cardname="Non-Clinical Treatments"
         serviceContent1="Tres Pro"
         serviceContent2="Celebrity's Choice"
@@ -88,15 +116,19 @@ export default function Services() {
 
 function FlipCard(props: any) {
   return (
-    <div className="Services1 w-[90vw] mx-auto" id="scroll-trigger">
-      <Link to="/services">
-        <div className="flip-card bg-transparent w-[31vw]">
-          <div className="flip-card-inner relative mx-[.5vw]">
+    <div className="Services1 w-max mx-auto" id="scroll-trigger">
+      <Link to={props.ln}>
+        <div className="flip-card bg-transparent w-[51vw] md:w-[41vw] md:h-[40vw] lg:w-[31vw] lg:h-[30vw]">
+          <div className="flip-card-inner relative mx-[.5vw] md:w-[41vw] md:h-[40vw] lg:w-[30vw] lg:h-[30vw]">
             <div className="flip-card-front absolute">
               <div className={props.serviceimg}>
-                <h2 className="caption txtshadow pt-[9.5vh] sm:pt-[18vh] lg:pt-[35vh] pl-[1vw] text-[13px] sm:text-[18px] lg:text-[3vw] leading-5 lg:leading-[36px] 2xl:leading-[48px]">
-                  {props.cardname}
-                </h2>
+                <div className="flex items-end  h-[50vw] md:h-[40vw] lg:h-[30vw]">
+                  <div className="bg-black w-[51vw] md:w-[41vw] lg:w-[30vw] h-max flex items-center pt-[1vh]">
+                    <h2 className="caption txtshadow pl-[2vw] text-[1rem] leading-[2vh] sm:text-[1.5rem] lg:text-[1.8rem] lg:leading-[4vh] 2xl:leading-[48px]">
+                      {props.cardname}
+                    </h2>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="flip-card-back absolute">

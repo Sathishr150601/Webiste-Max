@@ -27,7 +27,7 @@ export default class DRR extends Component {
       if (window.innerWidth <= 767) {
         if (window.innerWidth <= 450) {
           window.scrollTo({
-            top: window.innerHeight / 1.66,
+            top: window.innerHeight / 1.33,
             behavior: "smooth",
           });
         } else {

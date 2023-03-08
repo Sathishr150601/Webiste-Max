@@ -9,7 +9,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="HeaderWrapper relative z-[50]">
-        <div className="Header block fixed shadow-none inset-x-0 transition-[background-color] duration-[0.3s] animate-[stickySlideDown_0.65s_cubic-bezier(0.23,1,0.32,1)_both]">
+        <div className="Header block sm:fixed absolute shadow-none inset-x-0 transition-[background-color] duration-[0.3s] animate-[stickySlideDown_0.65s_cubic-bezier(0.23,1,0.32,1)_both]">
           <div className="flex justify-between mt-[4%] sm:mt-[2%] mx-[5%] sm:mx-[2%]">
             <HeaderLeft />
             <HeaderCenter />

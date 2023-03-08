@@ -137,6 +137,9 @@ hr {
 .marquee-container .overlay::after {
   background: none !important;
 }
+.marquee-container .overlay {
+  display: none;
+}
 
 .transition1 {
   animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;

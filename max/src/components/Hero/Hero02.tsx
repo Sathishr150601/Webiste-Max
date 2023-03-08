@@ -40,9 +40,13 @@ export default function Hero02(props: any) {
       </div>
       <div className="bottom h-[20vh] text-[.7rem] xl:text-[.9rem] 2xl:text-[1.2rem] md:h-[10vh]">
         <div className="inner flex flex-wrap justify-evenly flex-col md:flex-row">
-          <div className="flex-[100%] flex justify-evenly mb-[10vh] md:flex-[50%] text-center">
+          <div className="flex-[100%] flex justify-evenly mb-[10vh] md:flex-[50%] text-center ">
             <div className="">
-              <Link to={props.ln1} onClick={props.click1} className="space-btn">
+              <Link
+                to={props.ln1}
+                onClick={props.click1}
+                className="space-btn"
+              >
                 {props.menu1}
               </Link>
             </div>

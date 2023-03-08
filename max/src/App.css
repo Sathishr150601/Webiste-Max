@@ -87,15 +87,15 @@
 
 .flip-card {
   background-color: transparent;
-  width: 30vw;
-  height: 30vw;
+  width: 50vw;
+  height: 50vw;
   perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
-  width: 30vw;
-  height: 30vw;
+  width: 50vw;
+  height: 50vw;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -233,14 +233,6 @@
   font-weight: 900;
 }
 
-.innerService:hover .serviceCaption p,
-.innerService .serviceCaption .serviceBtn {
-  display: none;
-}
-.innerService:hover .serviceCaption .serviceBtn {
-  display: block;
-}
-
 .innerService:hover {
   color: #000;
   background: white;
@@ -283,4 +275,43 @@
 .Main-Menu .Services:hover .inner-menu,
 .Main-Menu .More:hover .inner-menu {
   display: block !important;
+}
+
+@media (max-width: 450px) {
+  .bottom .inner .space-btn {
+    font-size: 1.1em;
+    line-height: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bottom .inner .space-btn {
+    font-size: 1.1em;
+    line-height: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Transformations .Menu1 .space-btn {
+    font-size: 1.1em;
+    line-height: 2em;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 450px) {
+  #hide1,
+  #hide2 {
+    display: none;
+  }
+  .Hero3 .left h2 {
+    display: block;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 640px) {
+  .Hero3 .left h2 {
+    font-size: 13vw;
+    line-height: 8vh;
+  }
 }

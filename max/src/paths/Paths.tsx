@@ -139,7 +139,7 @@ export default function Paths() {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/menu" element={<Aside1 />} />
       <Route path="*" element={<UnderMaintanence />} />
-      <Route path="/test" element={<Aside />}></Route>
+      <Route path="/test" element={<Test />}></Route>
     </Routes>
   );
 }

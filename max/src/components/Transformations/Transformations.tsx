@@ -103,12 +103,12 @@ export default function Transformations() {
       <Header />
       <Hero2
         hero2class="w-[50vw] mx-auto pt-[50%] sm:pt-[20%] lg:pt-[20vh] xl:pt-[15vh] 2xl:pt-[10vh] pb-[8vh] pl-[3vw]"
-        hero2Caption="Max"
-        hero2Title1="Image"
-        hero2Title2="Gallery"
+        caption="Max"
+        title1="Image"
+        title2="Gallery"
       />
-      <div className="Menu1 top-0 flex justify-around w-[100vw] mx-auto m-[9vh] bg-white text-[.7rem] ">
-        <div className="ml-auto mr-[1vw]">
+      <div className="Menu1 top-0 flex flex-wrap flex-col sm:flex-row justify-center items-center w-[100vw] mx-auto bg-white text-[.7rem] -mt-[6vh] sm:-mt-[3vh]">
+        <div className="mx-auto mb-[5vh] sm:w-[45%] sm:ml-auto sm:mr-[1vw] sm:mb-[5vh] sm:flex sm:justify-center lg:w-[23vw]">
           <Link
             activeClass="active"
             className="test1 space-btn"
@@ -121,7 +121,7 @@ export default function Transformations() {
             Sapphire Hair Transplant
           </Link>
         </div>
-        <div className="mx-[1vw]">
+        <div className="mx-auto mb-[5vh] sm:w-[45%] sm:ml-[1vw] sm:mr-auto sm:mb-[5vh] sm:flex sm:justify-center lg:w-[23vw]">
           <Link
             activeClass="active"
             className="test1 space-btn"
@@ -134,7 +134,7 @@ export default function Transformations() {
             Activated Sapphire Mirror+FUE
           </Link>
         </div>
-        <div className="mx-[1vw]">
+        <div className="mx-auto mb-[5vh] sm:w-[45%] sm:ml-auto sm:mr-[1vw] sm:mb-[5vh] sm:flex sm:justify-center lg:w-[23vw]">
           <Link
             activeClass="active"
             className="test1 space-btn"
@@ -147,10 +147,10 @@ export default function Transformations() {
             Cosmetic Hair System
           </Link>
         </div>
-        <div className="ml-[1vw] mr-auto">
+        <div className="mx-auto mb-[5vh] sm:w-[45%] sm:ml-[1vw] sm:mr-auto sm:mb-[5vh] sm:flex sm:justify-center lg:w-[23vw]">
           <Link
             activeClass="active"
-            className="test1 space-btn"
+            className="test1 space-btn "
             to="test1"
             spy={true}
             smooth={true}
@@ -204,7 +204,7 @@ function ImageSection1() {
   return (
     <div className="w-[90vw] mx-auto">
       <Element name="test1">
-        <div className="pt-[20vh]">
+        <div className="pt-[8vh] md:pt-[10vh] lg:pt-[20vh]">
           <div className="text-center text-black">
             <h2 className="mb-[5vh]">Sapphire Hair Transplant</h2>
           </div>
@@ -244,7 +244,7 @@ function ImageSection2() {
   return (
     <div className="w-[80vw] mx-auto">
       <Element name="test1">
-        <div className="pt-[20vh]">
+        <div className="pt-[8vh] md:pt-[10vh] lg:pt-[20vh]">
           <div className="text-center text-black">
             <h2 className="mb-[5vh]">Activated Sapphire Mirror+FUE</h2>
           </div>
@@ -268,7 +268,7 @@ function ImageSection3() {
   return (
     <div className="w-[90vw] mx-auto">
       <Element name="test1">
-        <div className="pt-[20vh]">
+        <div className="pt-[8vh] md:pt-[10vh] lg:pt-[20vh]">
           <div className="text-center text-black">
             <h2 className="mb-[5vh]">Cosmetic Hair System</h2>
           </div>
@@ -292,7 +292,7 @@ function ImageSection4() {
   return (
     <div className="w-[90vw] mx-auto">
       <Element name="test1">
-        <div className="pt-[20vh]">
+        <div className="pt-[8vh] md:pt-[10vh] lg:pt-[20vh]">
           <div className="text-center text-black">
             <h2 className="mb-[5vh]">Video Testimonials</h2>
           </div>
@@ -300,7 +300,7 @@ function ImageSection4() {
             <Masonry gutter="1rem">
               {images.map((image) => (
                 <video
-                  className="rounded-3xl w-[50vw] mx-auto h-[50vh]"
+                  className="rounded-3xl w-[80vw] sm:w-[50vw] mx-auto h-[50vh]"
                   height="500"
                   controls
                   loop

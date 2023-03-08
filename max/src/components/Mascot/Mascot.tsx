@@ -5,7 +5,7 @@ import { MascotImg } from "../../assets";
 export default class Mascot extends Component {
   render() {
     return (
-      <div className="Mascot w-[90vw] mx-auto mt-[8vw] flex justify-center text-black">
+      <div className="Mascot w-[90vw] mx-auto my-[8vh] sm:mt-[8vw] flex justify-center text-black">
         <div className="mascotContent my-auto px-[5vw]">
           <h2 className="flex items-baseline justify-start text-[6vw] sm:text-[7vw] lg:mb-[3vh]">
             Hi, I'm<span className="text-[#fcb717] pl-3">XAM</span>
