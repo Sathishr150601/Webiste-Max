@@ -50,6 +50,7 @@ export default function Maps() {
   return (
     <Element name="map">
       <div className="MapsSection w-[90vw] h-[max] overflow-hidden mx-auto py-[8vw] flex text-black flex-col sm:flex-row">
+        <h2 className="my-[5vh]">Let's Meet</h2>
         <div className="textContainer w-[90vw] sm:w-[40vw]">
           <h4 className="pl-[2vw]">Locations(6)</h4>
           <div className="h-[450px] overflow-y-scroll" onLoad={ScrollToTop}>

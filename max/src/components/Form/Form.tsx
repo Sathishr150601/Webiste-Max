@@ -27,15 +27,10 @@ export default function Form() {
 
   return (
     <div className="Form w-[80vw] mx-auto text-[1vw] text-black my-[8vw]">
-      <p>Let's talk</p>
       <h2 className="my-[5vh]">
-        Get <br /> in Touch
+        Let's Get <br /> in Touch
       </h2>
-      <form
-        action="mailto:sathishr150601@gmail.com"
-        method="get"
-        className="form mt-[5vw]"
-      >
+      <form method="get" className="form mt-[5vw]">
         <div className="row1 sm:flex mb-[5vw]">
           <div className="section mr-[1vw]">
             <input

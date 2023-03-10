@@ -4,6 +4,7 @@ import { maxlogo1, maxlogo2, since } from "../../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
@@ -41,7 +42,9 @@ function HeaderCenter() {
       <div className="-mt-[10px] hidden">
         <img src={since} alt="" className="w-[28vw]" />
       </div>
-      <img src={maxlogo1} alt="" className="w-[28vw]" />
+      <Link to="/">
+        <img src={maxlogo1} alt="" className="w-[28vw]" />
+      </Link>
     </div>
   );
 }

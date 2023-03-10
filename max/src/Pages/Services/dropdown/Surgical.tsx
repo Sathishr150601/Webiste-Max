@@ -10,7 +10,9 @@ import {
 } from "../../../assets";
 
 export default function Surgical() {
-  window.onload = function ScrollEvent() {
+  window.onload = () => setTimeout(ScrollEvent, 1000);
+
+  function ScrollEvent() {
     if (window.innerWidth >= 1023) {
       if (window.innerWidth <= 1280) {
         window.scrollTo({
@@ -48,7 +50,7 @@ export default function Surgical() {
         });
       }
     }
-  };
+  }
 
   return (
     <div className="innerServiceWRappe flex flex-wrap justify-center mb-[8vw] w-[90vw] lg:w-[96vw] mx-auto">
@@ -92,7 +94,7 @@ export default function Surgical() {
         serviceBtn="/services/surgical-treatments/beard-hair-transplant"
         serviceIcon1={icon21}
         serviceCaption="No delay to achieve your Macho look. A permanent beard restoration procedure"
-        serviceTitle="BREAD HAIR TRANSPLANT"
+        serviceTitle="BEARD HAIR TRANSPLANT"
       />
       <InnerService
         serviceNo={7}

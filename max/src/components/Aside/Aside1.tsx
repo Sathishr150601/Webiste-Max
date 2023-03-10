@@ -18,7 +18,7 @@ export default function Aside1() {
           <img
             src={close}
             alt="close-btn"
-            className="w-[8vw] md:w-[6vw] lg:w-[3vw] hover:scale-125"
+            className="w-[8vw] md:w-[6vw] lg:w-[3vw] hover:scale-105 sm:hover:scale-125"
           />
         </Link>
       </div>
@@ -35,16 +35,16 @@ export default function Aside1() {
                 className=" pl-[3vw] w-[6vw] lg:pl-[1vw] lg:w-[1.5vw]"
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/about">Our Clinic </Link>
                 </li>
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/about">Our Capability </Link>
                 </li>
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/about">Our Forte </Link>
                 </li>
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/about">Our Milestones </Link>
                 </li>
               </ul>
@@ -56,22 +56,22 @@ export default function Aside1() {
                 className=" pl-[3vw] w-[6vw] lg:pl-[1vw] lg:w-[1.5vw]"
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/services">Surgical Treatments </Link>
                 </li>
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/services/non-surgical-treatments">
-                    Non-Surgical Treatments{" "}
+                    Non-Surgical Treatments
                   </Link>
                 </li>
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/services/clinical-treatments">
-                    Clinical Treatments{" "}
+                    Clinical Treatments
                   </Link>
                 </li>
-                <li className="hover:scale-125">
+                <li className="hover:scale-105 sm:hover:scale-125">
                   <Link to="/services/non-clinical-treatments">
-                    Non-Clinical Treatments{" "}
+                    Non-Clinical Treatments
                   </Link>
                 </li>
               </ul>
@@ -87,7 +87,9 @@ export default function Aside1() {
               />
               <ul className="inner-menu text-center text-[.5em] hidden">
                 <Link to="/transformations">
-                  <li className="hover:scale-125">Image Gallery</li>
+                  <li className="hover:scale-105 sm:hover:scale-125">
+                    Image Gallery
+                  </li>
                 </Link>
               </ul>
             </li>

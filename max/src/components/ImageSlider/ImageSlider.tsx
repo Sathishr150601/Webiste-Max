@@ -11,7 +11,7 @@ export default class ImageSlider extends Component {
           speed={100}
           className="lg:mt-[1vh] 2xl:mt-[2vh]"
         >
-          <div className="flex w-[180vw]  text-black">
+          <div className="flex w-[180vw] sm:w-[150vw] text-black">
             <img
               src={slideimg1}
               alt=""

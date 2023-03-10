@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <!-- <link rel="icon" type="image/png" href="./max.png" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Max - Hair Defines You</title>
-    <script type="module" crossorigin src="/assets/index-6a7411c8.js"></script>
-    <link rel="stylesheet" href="/assets/index-68d09cc5.css">
+    <script type="module" crossorigin src="/assets/index-975a9f57.js"></script>
+    <link rel="stylesheet" href="/assets/index-2031f963.css">
   </head>
   <body>
-    <div id="circle">
+    <div class="hidden lg:block" id="circle">
       <!-- <div class="w-[80px] h-[80px] bg-[red] rounded-[50%] hidden">
         <p class="text-xl pt-[16px] text-center">Next Page</p>
       </div> -->
@@ -51,6 +51,11 @@
       function lerp(start, end, amt) {
         return (1 - amt) * start + amt * end;
       }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(window).scrollTop(0);
+      });
     </script>
   </body>
 </html>

@@ -107,7 +107,7 @@ export default function Transformations() {
         title1="Image"
         title2="Gallery"
       />
-      <div className="Menu1 top-0 flex flex-wrap flex-col sm:flex-row justify-center items-center w-[100vw] mx-auto bg-white text-[.7rem] -mt-[6vh] sm:-mt-[3vh]">
+      <div className="Menu1 mt-[12px] flex flex-wrap flex-col sm:flex-row justify-center items-center w-[100vw] mx-auto bg-white text-[.7rem]">
         <div className="mx-auto mb-[5vh] sm:w-[45%] sm:ml-auto sm:mr-[1vw] sm:mb-[5vh] sm:flex sm:justify-center lg:w-[23vw]">
           <Link
             activeClass="active"

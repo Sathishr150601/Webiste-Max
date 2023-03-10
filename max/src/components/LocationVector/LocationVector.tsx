@@ -30,7 +30,7 @@ export default class LocationVector extends Component {
               className="w-[24vw] lg:w-[22vw] mx-[.5vw]"
             />
             <div className="imgText text-center">
-              <h4>Banglore</h4>
+              <h4>Bangalore</h4>
             </div>
           </div>
           <div className="section">
@@ -52,7 +52,7 @@ export default class LocationVector extends Component {
               className="w-[24vw] lg:w-[22vw] mx-[.5vw]"
             />
             <div className="imgText text-center">
-              <h4>Hyderbad</h4>
+              <h4>Hyderabad</h4>
             </div>
           </div>
           <div className="section">

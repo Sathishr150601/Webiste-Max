@@ -15,7 +15,7 @@ export default class Hero extends Component {
               <img src={since} alt="" className="w-[40vw] -my-[4vh]" />
             </div>
             <div className="left pl-[5vw] sm:pl-0">
-              <h2 className="flex pt-[2vh] font-semibold text-[9vw] leading-[9vh] sm:text-[12vw] sm:leading-[6vh] md:text-[10vw] md:leading-[5vh] lg:text-[12vw] lg:leading-[11vh] 2xl:text-[9vw] 2xl:leading-[8vh] ">
+              <h2 className="flex pt-[2vh] font-semibold text-[9vw] leading-[9vh] sm:text-[12vw] sm:leading-[6vh] md:text-[10vw] md:leading-[5vh] lg:text-[11vw] lg:leading-[11vh] 2xl:text-[9vw] 2xl:leading-[8vh] ">
                 <span className="mb-[5vw]">Hair &nbsp;</span>
                 <span className="mb-[5vw]">Defines &nbsp;</span>
                 <span className="mb-[5vw]">You &nbsp;</span>
@@ -24,28 +24,33 @@ export default class Hero extends Component {
                 className="call-btnWrapper mr-8 flex justify-center text-[#fff] -ml-[2vw] sm:hidden overflow-hidden"
                 id="hide2"
               >
-                <div className="icon relative w-[4em] mt-[1em]">
-                  <FontAwesomeIcon
-                    icon={faPhone}
-                    className="h-[3em] absolute"
-                  />
-                </div>
-                <div className="number-content">
-                  <p className="mb-0">Call Us</p>
-                  <p className="-mt-2 mb-0 font-bold">1800 202 6112</p>
-                </div>
+                <a href="tel:18002026112">
+                  <div className="icon relative w-[4em] mt-[1em]">
+                    <FontAwesomeIcon
+                      icon={faPhone}
+                      className="h-[3em] absolute"
+                    />
+                  </div>
+                </a>
+
+                <a href="tel:18002026112">
+                  <div className="number-content">
+                    <p className="mb-0">Call Us</p>
+                    <p className="-mt-2 mb-0 font-bold">1800 202 6112</p>
+                  </div>
+                </a>
               </div>
             </div>
             <div className="right hidden sm:flex sm:flex-col sm:justify-center sm:items-center">
               <img
                 src={since}
                 alt=""
-                className="w-[15vw] -my-[2vh] lg:w-[18vw] lg:-mt-[-3vh] 2xl:w-[16vw] 2xl:-my-[3vh]"
+                className="w-[15vw] -my-[2vh] lg:w-[18vw] lg:-my-[5vh] 2xl:w-[16vw] 2xl:-my-[3vh]"
               />
               <img
                 src={maxlogo2}
                 alt=""
-                className="w-[35vw] -my-[3vh] lg:w-[40vw] lg:-my-[5vh] 2xl:w-[35vw] 2xl:-my-[4vh]"
+                className="w-[35vw] -my-[3vh] lg:w-[40vw] lg:-my-[6vh] 2xl:w-[35vw] 2xl:-my-[4vh]"
               />
             </div>
           </div>

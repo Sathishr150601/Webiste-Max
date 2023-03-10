@@ -127,6 +127,12 @@
   transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+@media (max-width: 450px) {
+  .flip-card:hover .flip-card-inner .flip-card-back {
+    transform: rotateY(180deg);
+  }
+}
+
 /* footer */
 .SocialMediaIcons {
   margin-right: 1vw;
@@ -314,4 +320,11 @@
     font-size: 13vw;
     line-height: 8vh;
   }
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  margin-bottom: 3vh;
+}
+.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
+  margin-bottom: 3vh;
 }

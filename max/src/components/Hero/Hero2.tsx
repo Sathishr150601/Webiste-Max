@@ -4,7 +4,7 @@ import { arrowDark, maxlogo1, maxlogo2, since1 } from "../../assets";
 export default function Hero2(props: any) {
   return (
     <section className="Hero02 overflow-clip text-black w-[100vw] ">
-      <div className="top w-[90vw] mx-auto h-[80vh] pt-[25vh] pb-[5vh] sm:pt-[16vh] sm:flex sm:justify-around md:h-[90vh] ">
+      <div className="top w-[90vw] mx-auto h-[70vh] pt-[25vh] pb-[5vh] sm:pt-[16vh] sm:flex sm:justify-around md:h-[90vh] ">
         <div className="top-left pl-[3vw] flex flex-col justify-center sm:pl-0">
           <div className="arrow-icon">
             <img
